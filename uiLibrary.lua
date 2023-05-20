@@ -271,7 +271,7 @@ function library:Init()
 			
 			ts:Create(HealthBar, TweenInfo.new(0.1), {Size = UDim2.new(info.Health / info.MaxHealth * 0.622, 0, 0.154, 0)}):Play();
 		elseif info.Player == false then
-			ts:Create(TargetHud, TweenInfo.new(0.3), {Size = UDim2.new(0.622, 0, 0.154, 0)}):Play();
+			ts:Create(TargetHud, TweenInfo.new(0.3), {Size = UDim2.new(0, 0, 0, 0)}):Play();
 		end
 	end
 	
@@ -424,7 +424,7 @@ function library:Init()
 	AntiCheatInfo.Parent = Protestix
 	AntiCheatInfo.BackgroundColor3 = Color3.fromRGB(13, 14, 24)
 	AntiCheatInfo.BorderSizePixel = 0
-	AntiCheatInfo.Position = UDim2.new(0, 569, 0, 613)
+	AntiCheatInfo.Position = UDim2.new(0.434, 0, 0.94, 0)
 	AntiCheatInfo.Size = UDim2.new(0.132, 0, 0.031, 0)
 
 	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(144, 144, 144)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
@@ -631,7 +631,7 @@ function library:Init()
 			
 			Button.Name = "Button"
 			Button.Parent = List
-			Button.BackgroundColor3 = Color3.fromRGB(14, 10, 24)
+			Button.BackgroundColor3 = Color3.fromRGB(13, 14, 24)
 			Button.BorderSizePixel = 0
 			Button.Position = UDim2.new(0, 0, 0.143, 0)
 			Button.Size = UDim2.new(0, 217, 0, 27)
